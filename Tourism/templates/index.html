@@ -1,0 +1,514 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href='{% static "vendors/css/normalize.css" %}'>
+  <link rel="stylesheet" type="text/css" href='{% static "vendors/css/ionicons.min.css" %}'>
+  <link rel="stylesheet" type="text/css" href='{% static "vendors/css/grid.css" %}'>
+  <link rel="stylesheet" type="text/css" href='{% static "resources/css/style.css" %}'>
+  <link rel="stylesheet" type="text/css" href='{% static "resources/css/queries.css" %}'>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic">
+  <link rel="stylesheet" href='{% static "resources/css/preloader.css" %}'>
+  <link rel="stylesheet" href='{% static "resources/css/navbar.css" %}'>
+  <link rel="stylesheet" href='{% static "resources/css/places.css" %}'>
+  <link rel="stylesheet" href='{% static "resources/css/location.css" %}'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <meta charset="utf-8">
+  <title>Mysuru</title>
+</head>
+
+<body onload="myFunction()">
+
+  <!-- preloader function  -->
+  <div id="loading">
+    <span class="sp"></span>
+    <span class="sp"></span>
+    <span class="sp"></span>
+    <span class="sp"></span>
+    <span class="sp"></span>
+    <span class="sp"></span>
+    <span class="sp"></span>
+  </div>
+  <!-- preloader end  -->
+
+
+
+  <header>
+    <nav id="navbar">
+      <div id="navlogo">
+          <a href="https://www.youtube.com/watch?v=sqtpLCP-stE" target="_blank"> <img src='{% static "resources/images/logo.png" alt="" class=" Logo"%}'></a>
+      </div>
+      <ul>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#Recommendation">Recommendation</a></li>
+        <li><a href="#Hotel">Hotel</a></li>
+        <li><a href="#TOUR">TOUR GUIDE</a></li>
+      </ul>
+  </nav>
+    <!-- <nav class="sticky" id="navbar">
+      <div class="row"> -->
+        <!-- <img src='{% static"resources/img/logo-white.png" alt="Omnifood Logo" class="Logo"'>
+        <img src='{% static "resources/images/9.png" alt="Omnifood Logo" class="Logo"%}'>
+        <img src='{% static"resources/img/logo.png" alt="Omnifood Logo" class="Logo-black"'> -->
+        <!-- <ul class="main-nav">
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#Recommendation">Recommendation</a></li>
+          <li><a href="#Hotel">Hotel</a></li>
+          <li><a href="#TOUR">TOUR GUIDE</a></li>
+        </ul>
+      </div>
+    </nav> -->
+    <div class="hero-text-box">
+      <h1 class="headd">The place where Heritage of History is blended with sweetness of Deserts</h1>
+      <a class="btn btn-full" href="#explore">Explore</a>
+      <a class="btn btn-ghost" href="#TOUR">Show me more</a>
+    </div>
+
+  </header>
+
+
+
+
+  <section class="section-features">
+    <div class="row">
+
+      <h2>Precautions for covid 19</h2>
+     
+    </div>
+    <div class="row">
+      <div class="col span-1-of-4 box">
+        <img src='{% static "resources/images/circle-cropped.png" %}' alt="" class="covidimg">
+        <h3> <Pre>    Say home if sick</Pre> </h3>
+        
+      </div>
+      <div class="col span-1-of-4 box">
+        <img src='{% static "resources/images/circle-cropped (1).png" %}' alt="" class="covidimg">
+        <h3><pre>
+  Don't touch your 
+     face with
+  unwashed hands
+                </pre>
+              </h3>
+      </div>
+      <div class="col span-1-of-4 box">
+        <img src='{% static "resources/images/circle-cropped (3).png" %}' alt="" class="covidimg">
+        <h3><pre>Clean surface regularly</pre></h3>
+      </div>
+      <div class="col span-1-of-4 box">
+        <img src='{% static "resources/images/circle-cropped (2).png" %}' alt="" class="covidimg">
+        <h3><pre>Wash your hands</pre> </h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- <iframe width="100%" height="500" src="https://www.youtube.com/embed/sqtpLCP-stE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+
+
+  <section class="location" id="explore">
+    <div class="loc">
+      <img src='{% static "resources/images/9.png" %}' alt="Godly Museum" class="photo">
+      <h4>Godly Museum</h4>
+      <a href="https://goo.gl/maps/fErCB3cb7FehcpuF8"><img src='{% static "resources/images/pin.png" %}' alt=" " class="pin"></a>
+    </div>
+    <div class="loc">
+      <img src='{% static "resources/images/21.png"  %}' alt="Nandi Bull" class="photo">
+      <h4>Nandi Bull</h4>
+      <a href="https://goo.gl/maps/gGsmwkLN7XkCVZmN8"><img src='{% static "resources/images/pin.png" %}' alt=" " class="pin"></a>
+    </div>
+    <div class="loc">
+      <img src='{% static "resources/images/20.jpg" %}' alt="Mysuru Palace" class="photo">
+      <h4>Mysuru Palace</h4>
+      <a href="https://goo.gl/maps/w7pE1LqS3ShQJAG38"><img src='{% static "resources/images/pin.png" %}' alt=" " class="pin"></a>
+    </div>
+    <div class="loc">
+      <img src='{% static "resources/images/16.png"  %}' alt="Mahishasura Mardhini Statue" class="photo">
+      <h4>
+        <pre>
+    Mahishasura
+    Mardhini 
+    Statue
+  </pre>
+      </h4>
+      <a href="https://goo.gl/maps/6jQSJAyxH2fFg9h56"><img src='{% static "resources/images/pin.png" %}' alt=" " class="pin"></a>
+    </div>
+    <div class="loc">
+      <img src='{% static "resources/images/2.png" %}' alt="Brindavan Garden" class="photo">
+      <h4>Brindavan Garden</h4>
+      <a href=""><img src='{% static "resources/images/pin.png" %}' alt=" " class="pin"></a>
+    </div>
+    <div class="loc">
+      <img src='{% static "resources/images/6.png" %}' alt="Chamarajendra Zoo" class="photo">
+      <h4>Chamarajendra Zoo</h4>
+      <a href=""><img src='{% static "resources/images/pin.png" %}' alt=" " class="pin"></a>
+    </div>
+    <div class="loc">
+      <img src='{% static "resources/images/8.png"  %}' alt="Chamundi Hills" class="photo">
+      <h4>Chamundi Hills</h4>
+      <a href=""><img src='{% static "resources/images/pin.png" %}' alt=" " class="pin"></a>
+    </div>
+    <div class="loc">
+      <img src='{% static "resources/images/12.png"  %}' alt="Kishkinda Moolika Bonsai Garden" class="photo">
+      <h4>
+        <pre>
+    Kishkinda 
+     Moolika 
+    Bonsai Garden
+  </pre>
+      </h4>
+      <a href=""><img src='{% static "resources/images/pin.png" %}' alt=" " class="pin"></a>
+    </div>
+  </section>
+
+  
+  <section class="section-steps" id="Recommendation">
+    <div class="row">
+      <h2>Places you must visit in mysuru</h2>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-2 steps-box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124738.44715984794!2d76.56564907012171!3d12.31063683220752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70381d572ef9%3A0x2b89ece8c0f8396d!2sMysuru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1607585308494!5m2!1sen!2sin"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+      <div class="col span-1-of-2 steps-box">
+        <div class="works-step">
+          <div>1</div>
+          <p>Mysore Palace</p>
+          <a href="https://goo.gl/maps/JP3JckVYi1Ddwc9a7" target="_blank"><i class="fa fa-map-marker"></i></a>
+        </div>
+        <div class="works-step">
+          <div>2</div>
+          <p>Shri Chamundeshwari Temple</p>
+          <a href="https://goo.gl/maps/ZCeksPHCrHKQkLX56" target="_blank"><i class="fa fa-map-marker"></i></a>
+        </div>
+        <div class="works-step">
+          <div>3</div>
+          <p>Brindavan Gardens</p>
+          <a href="https://goo.gl/maps/B72peX8MQtmJ4EBX9" target="_blank"><i class="fa fa-map-marker"></i></a>
+        </div>
+
+        <a href="https://apps.apple.com/in/app/mysuru-directory/id1451183917" class="btn-app" target="_blank"><img
+            src='{% static "resources/img/apple.png"  %}' alt="App Store Button"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.safewheelsgroup.visitmysuru" class="btn-app"
+          target="_blank"><img src='{% static "resources/img/download-app-android.png" %}' alt="Play Store Button"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-cities" id="Hotel">
+    <div class="row">
+      <h2>Hotels</h2>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-4 box himg">
+        <img
+          src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/7c/29/40/grand-mercure-mysuru.jpg?w=900&h=-1&s=1'
+          alt="Lisbon">
+        <h3>Grand Mercure Mysore</h3>
+        <div class="city-feature">
+          <i class="ion-ios-person icon-small"></i>
+          1600+ happy peoples
+        </div>
+        <div class="city-feature">
+          <i class="ion-ios-star icon-small"></i>
+          60+ top chefs
+        </div>
+        <div class="city-feature">
+          <i class="ion-ios-location icon-small"></i>
+          <a href="https://goo.gl/maps/trJYYqMLP8sJKyxc9" target="_blank" class="twee-links">@Location</a>
+        </div>
+      </div>
+      <div class="col span-1-of-4 box himg">
+        <img
+          src='https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/201710052225364493-587ffa24466911e9aef70242ac110002.jpg?&output-quality=75&downsize=520:350&crop=520:350;2,0&output-format=jpg'
+          alt="San Francisco">
+        <h3>Hotel Samudra Mysore</h3>
+        <div class="city-feature">
+          <i class="ion-ios-person icon-small"></i>
+          3700+ happy peoples
+        </div>
+        <div class="city-feature">
+          <i class="ion-ios-star icon-small"></i>
+          160+ top chefs
+        </div>
+        <div class="city-feature">
+          <i class="ion-ios-location icon-small"></i>
+          <a href="https://goo.gl/maps/L4NM4njfhDmUBiQf7" target="_blank" class="twee-links">Location</a>
+        </div>
+      </div>
+      <div class="col span-1-of-4 box himg">
+        <img src='https://cf.bstatic.com/images/hotel/max1024x768/249/249047786.jpg' alt="Berlin">
+        <h3>The Grand Inn</h3>
+        <div class="city-feature">
+          <i class="ion-ios-person icon-small"></i>
+          2300+ happy peoples
+        </div>
+        <div class="city-feature">
+          <i class="ion-ios-star icon-small"></i>
+          110+ top chefs
+        </div>
+        <div class="city-feature">
+          <i class="ion-ios-location icon-small"></i>
+          <a href="https://g.page/the-grand-inn?share" target="_blank" class="twee-links">Location</a>
+        </div>
+      </div>
+      <div class="col span-1-of-4 box himg">
+        <img src='https://ak-d.tripcdn.com/images/220f090000003zffqA7A8_R_550_412_R5_Q70_D.jpg' alt="London">
+        <h3>Radisson Blu Plaza Hotel</h3>
+        <div class="city-feature">
+          <i class="ion-ios-person icon-small"></i>
+          1200+ happy peoples
+        </div>
+        <div class="city-feature">
+          <i class="ion-ios-star icon-small"></i>
+          50+ top chefs
+        </div>
+        <div class="city-feature">
+          <i class="ion-ios-location icon-small"></i>
+          <a href="https://goo.gl/maps/85J8dCRKc7nyXXXP8" target="_blank" class="twee-links">Location</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-testimonials">
+    <div class="row">
+      <h2>Our Visitor</h2>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-3">
+        <blockquote>
+          Wonderfull city i have seen in india the mot cleanest city in india and no traffic railway station is also
+          cleane sigting is very popular one thing i should say best city india
+          <cite><img src='{% static "resources/img/customer-1.jpg"  %}' alt="Alberto Image">Kundan Surve</cite>
+        </blockquote>
+      </div>
+      <div class="col span-1-of-3">
+        <blockquote>
+          Mysore is a very friendly and peaceful place, those who want to enjoy their time it's the perfect destination,
+          ones your in mysore its like you never wanna leave.
+          <cite><img src='{% static "resources/img/customer-2.jpg"  %}' alt="Joana Image">Priyanka Salunkhe</cite>
+        </blockquote>
+      </div>
+      <div class="col span-1-of-3">
+        <blockquote>
+          I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up
+          with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+          <cite><img src='{% static "resources/img/customer-3.jpg" %}' alt="Milton Chapman Image">Vaibhav Bhapkar</cite>
+        </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-plans" id="TOUR">
+    <div class="row">
+      <h2>Tour guide</h2>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-3">
+        <div class="plan-box">
+          <div>
+            <h3>Premium</h3>
+            <p class="plan-price">2000Rs</p>
+            <p class="plan-price-meal">With free meal of 700Rs </p>
+
+          </div>
+          <div>
+            <ul>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Mysore Palace</li>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Shri Chamundeshwari Temple</li>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Brindavan Gardens</li>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+            </ul>
+          </div>
+          <div>
+            <a href="#bform" class="btn btn-full">Book</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col span-1-of-3">
+        <div class="plan-box">
+          <div>
+            <h3>Pro</h3>
+            <p class="plan-price">1500Rs</p>
+            <p class="plan-price-meal">With free meal of 300Rs </p>
+          </div>
+          <div>
+            <ul>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Mysore Palace</li>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Shri Chamundeshwari Temple</li>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Brindavan Gardens</li>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Chamundeshwari Temple</li>
+            </ul>
+          </div>
+          <div>
+            <a href="#bform" class="btn btn-ghost">Book</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col span-1-of-3">
+        <div class="plan-box">
+          <div>
+            <h3>Starter</h3>
+            <p class="plan-price">800Rs</p>
+            <p class="plan-price-meal">&nbsp;</p>
+
+          </div>
+          <div>
+            <ul>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Mysore Palace</li>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Shri Chamundeshwari Temple</li>
+              <li><i class="ion-ios-close-empty icon-small"></i>Brindavan Gardens</li>
+              <li><i class="ion-ios-checkmark-empty icon-small"></i>Chamundeshwari Temple</li>
+            </ul>
+          </div>
+          <div>
+            <a href="#bform" class="btn btn-ghost">Book</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-form" id="bform">
+    <div class="row">
+      <h2>Book your tour guide</h2>
+    </div>
+    <div class="row">
+      <form class="contact-form" action="#" method="post">
+        {% csrf_token %}
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="name">Name</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="email">Phone</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="text" name="tel" id="tel" placeholder="Phone" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="email">Email</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label>What type of tour guide do you need?</label>
+          </div>
+          <div class="col span-2-of-3">
+            <select id="find-us" name="message">
+              <option value="search" selected>Search Engine</option>
+              <option value="PREMIUM">PREMIUM</option>
+              <option value="PRO">PRO</option>
+              <option value="STARTER">STARTER</option>
+            </select>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col span-1-of-3">
+            <label>Newsletter</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="checkbox" name="news" id="news" required checked> Yes, Please
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col span-1-of-3">
+            <label>Drop us a line</label>
+          </div>
+          <div class="col span-2-of-3">
+            <textarea name="message" placeholder="Your Message"></textarea>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label>&nbsp;</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="submit" name="" value="Book it!">
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col span-1-of-2">
+        <nav>
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <ul class="social-nav">
+            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+            <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row">
+        <p>
+          Copyrigth &copy; 2020 by Rock Eagers. All rigths reserved
+        </p>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+  </script>
+  <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js">
+  </script>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js">
+  </script>
+  <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js">
+  </script>
+  <script src='{% static "resources/js/navbar.js" %}'></script>
+  <script src='{% static "resources/js/script.js" %}'></script>
+  <script src='{% static "resources/js/preloader.js" %}'></script>
+
+
+  </script>
+</body>
+
+</html>
+
+<!--
+
+
+-->

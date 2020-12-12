@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+#navbar{
+    width: 100%;
+    height: 87px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+}
+.effectbg{
+    background: rgb(243, 100, 34);
+}
+#navlogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+#navlogo:hover{
+    transform: scale(1.08);
+}
+#navlogo img{
+    width: 159px;
+    height: 82px;
+}
+#navlogo h3{
+    font-size: 10px;
+    color: azure;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 53px;
+    font-size: 23px;
+    padding: 5px 11px; 
+    outline: none; 
+}
+#navbar ul li a:hover{
+ 
+    color: black;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+
+.icon-area {
+    display: none;
+}
+
+
