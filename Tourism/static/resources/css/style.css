@@ -523,3 +523,12 @@ footer p {
 }
 
 
+.feed{
+  margin-top: 100px;
+}
+
+.hfeed{
+  color: black;
+  margin-left: 500px;
+  margin-top: 50px;
+}

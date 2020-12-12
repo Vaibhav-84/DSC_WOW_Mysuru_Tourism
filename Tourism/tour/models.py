@@ -11,9 +11,21 @@ class Contact(models.Model):
     def __str__(self):
         return self.name
 
-class Rate(models.Model):
-	rate = models.CharField(max_length=50)
-	meal = models.CharField(max_length=50)
+class Feed(models.Model):
+    msg_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    email = models.CharField(max_length=70, default="")
+    message = models.CharField(max_length=70, default="")
 
-	def __str__(self):
-		return self.rate
+    def __str__(self):
+        return self.name
+
+class Valo(models.Model):
+    msg_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    email = models.CharField(max_length=70, default="")
+    message = models.CharField(max_length=70, default="")
+
+    def __str__(self):
+        return self.name
+
