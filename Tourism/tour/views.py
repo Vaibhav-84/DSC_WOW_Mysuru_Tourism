@@ -16,3 +16,14 @@ def homepage(request):
 	return render(request, 'index.html')
 
 
+def Zoo(request):
+    return render(request, 'Chamarajendra.html')
+
+def Palace(request):
+    return render(request, 'PALACE.html')
+
+def Hills(request):
+    return render(request, 'Chamundi.html')
+
+def Gardens(request):
+    return render(request, 'Brindavan.html')
