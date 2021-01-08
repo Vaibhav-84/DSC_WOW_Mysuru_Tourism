@@ -27,10 +27,8 @@ def volunteer(request):
 	if request.method=="POST":
 		name = request.POST.get('name', '')
 		email = request.POST.get('email', '')
-		tel = request.POST.get('tel', '')
-		doc = request.POST.get('filename','')
 		message = request.POST.get('message', '')
-		valo = Valo(name=name, tel=tel, email=email, message=message,doc=doc)
+		valo = Valo(name=name, email=email, message=message)
 		valo.save()
 	return render(request, 'valo.html')
 

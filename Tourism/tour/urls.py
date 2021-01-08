@@ -2,7 +2,6 @@ from django.urls import path
 from .views import homepage
 from . import views
 
-
 urlpatterns = [
     path('', homepage, name='index'),
     path('Zoo/', views.Zoo, name='tour'),

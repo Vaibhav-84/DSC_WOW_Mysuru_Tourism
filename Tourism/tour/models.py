@@ -23,9 +23,7 @@ class Feed(models.Model):
 class Valo(models.Model):
     msg_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
-    tel  = models.CharField(max_length=70, default="")
     email = models.CharField(max_length=70, default="")
-    doc = models.ImageField(upload_to='Images/', default="")
     message = models.CharField(max_length=70, default="")
 
     def __str__(self):
