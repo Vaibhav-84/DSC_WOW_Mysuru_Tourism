@@ -25,20 +25,47 @@
 
 <body>
   <header>
-    <nav id="navbar">
-      <div id="navlogo">
-          <a href="https://www.youtube.com/watch?v=sqtpLCP-stE" target="_blank"> <img src='{% static "resources/images/logo.png" alt="" class=" Logo"%}'></a>
-      </div>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+    <label for="page-nav-toggle">
+      <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+        <g class="icon-group">
+          <g class="icon--menu">
+            <path d="M 6 0 L 54 0" />
+            <path d="M 6 15 L 54 15" />
+            <path d="M 6 30 L 54 30" />
+          </g>
+          <g class="icon--close">
+            <path d="M 15 0 L 45 30" />
+            <path d="M 15 30 L 45 0" />
+          </g>
+        </g>
+      </svg>
+    </label>
+
+    <nav class="main-navigation">
       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="video.html">Greetings</a></li>
+        <li><a href="writtings.html">Memories</a></li>
+        <li><a href="slambook.html">Slambook</a></li>
+        <li><a href="start.html">Guess Who??</a></li>
+        <li><a href="surprise.html">Other Mess</a></li>
+      </ul>
+    </nav>
+    <!-- <nav id="navbar">-->
+
+      <div id="navlogo">
+          <a href="https://www.youtube.com/watch?v=sqtpLCP-stE" target="_blank"> <img src='{% static "resources/images/logo.png" %}' alt="" class="Logo"></a>
+      </div>
+      <!-- <ul>
         <li><a href="#explore">Explore</a></li>
         <li><a href="#Recommendation">Recommendation</a></li>
         <li><a href="#Hotel">Hotel</a></li>
         <li><a href="#TOUR">GUIDE</a></li>
         <li><a href="feedback/">FEEDBACK</a></li>
         <li><a href="volunteer/">VOLUNTEER</a></li>
-      </ul>
-  </nav>
-
+      </ul> -->
+  </nav> 
     <div class="hero-text-box">
       <h1 class="headd">The place where Heritage of History is blended with sweetness of Deserts</h1>
       <a class="btn btn-full" href="#explore">Explore</a>
@@ -59,15 +86,13 @@
     <div class="row">
       <div class="col span-1-of-4 box">
         <img src='{% static "resources/images/circle-cropped.png" %}' alt="" class="covidimg">
-        <h3> <Pre>    Say home if sick</Pre> </h3>
+        <h3> <Pre>Stay home if sick</Pre> </h3>
         
       </div>
       <div class="col span-1-of-4 box">
         <img src='{% static "resources/images/circle-cropped (1).png" %}' alt="" class="covidimg">
         <h3><pre>
-  Don't touch your 
-     face with
-  unwashed hands
+  Wear mask
                 </pre>
               </h3>
       </div>
@@ -77,7 +102,7 @@
       </div>
       <div class="col span-1-of-4 box">
         <img src='{% static "resources/images/circle-cropped (2).png" %}' alt="" class="covidimg">
-        <h3><pre>Wash your hands</pre> </h3>
+        <h3><pre>Sanitize hands</pre> </h3>
       </div>
     </div>
   </section>
