@@ -32,8 +32,8 @@
 
 <div class="person">
   <div class="person-badge">
-    <img class="normal" src="">
-    <img class="peculiar" src="g2-removebg-preview.png">
+    <img class="normal" src="v1-removebg-preview.png">
+    <img class="peculiar" src="v2-removebg-preview.png">
   </div>
     <br />
     <br />
@@ -46,7 +46,7 @@
 
 <div class="person">
   <div class="person-badge">
-    <img class="normal" src="">
+    <img class="normal" src="g1-removebg-preview.png">
     <img class="peculiar" src="g2-removebg-preview.png">
   </div>
     <br />
