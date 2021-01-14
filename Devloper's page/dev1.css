@@ -20,6 +20,17 @@ body {
   font-size: 100%;
   text-align: center;
 }
+.arrow{
+  border: 2px solid black;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all ease-in 0.2s;
+}
+.arrow1{
+  opacity: 1;
+}
 .criterion {
   font-size: 1.6rem;
   position: absolute;
