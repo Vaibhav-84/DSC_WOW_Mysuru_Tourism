@@ -44,3 +44,9 @@ def Hills(request):
 
 def Gardens(request):
     return render(request, 'Brindavan.html')
+
+def DEVS(request):
+    return render(request, 'dev1.html')
+
+def DEVS2(request):
+    return render(request, 'dev2.html')

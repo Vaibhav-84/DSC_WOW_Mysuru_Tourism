@@ -10,4 +10,6 @@ urlpatterns = [
     path('Gardens/', views.Gardens, name='Gardens'),
     path('feedback/', views.feedback, name='feedback'),
     path('volunteer/', views.volunteer, name='volunteer'),
+    path('devs/', views.DEVS, name='devs'),
+    path('devs/devs2/', views.DEVS2, name='devs2'),
 ]
