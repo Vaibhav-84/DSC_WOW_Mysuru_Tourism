@@ -547,12 +547,12 @@ footer p {
 
 
 /* feedback form  */
-.relative{
+.f-form{
   bottom: 80px;
 }
 
 @media only screen and (max-width: 767px) {
-  .relative{
+  .f-form{
     bottom: 60px;
   }
 }

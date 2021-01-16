@@ -13,12 +13,11 @@ class Contact(models.Model):
 
 class Feed(models.Model):
     msg_id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50)
     email = models.CharField(max_length=70, default="")
     message = models.CharField(max_length=70, default="")
 
     def __str__(self):
-        return self.name
+        return self.email
 
 class Valo(models.Model):
     msg_id = models.AutoField(primary_key=True)
