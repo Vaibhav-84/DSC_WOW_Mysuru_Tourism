@@ -544,3 +544,15 @@ footer p {
 
 
 /* NAVBAR*/
+
+
+/* feedback form  */
+.f-form{
+  bottom: 80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .f-form{
+    bottom: 60px;
+  }
+}

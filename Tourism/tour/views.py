@@ -14,10 +14,9 @@ def homepage(request):
 def feedback(request):
 	
 	if request.method=="POST":
-		name = request.POST.get('name', '')
 		email = request.POST.get('email', '')
 		message = request.POST.get('message', '')
-		feed = Feed(name=name, email=email, message=message)
+		feed = Feed(email=email, message=message)
 		feed.save()
 	return render(request, 'feedback.html')
 
