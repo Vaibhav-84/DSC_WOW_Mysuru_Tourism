@@ -5,15 +5,24 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
-    padding: 0px;
-    background: black;
+    padding-top: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+#explore{
+    /* height: 100vh; */
+    background: #f2709c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .loc{
-    margin: 0px;
+    margin: 10px;
     padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    border-radius: 12px;
 }
 
 .loc .photo{
@@ -21,7 +30,7 @@
     height: 250px;
     margin: 0px;
     padding: 0px;
-    /* border-radius: 12px; */
+    border-radius: 12px;
 }
 .loc h4 pre{
     font-family: 'Yanone Kaffeesatz', sans-serif;
