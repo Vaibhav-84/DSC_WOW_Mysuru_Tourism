@@ -2,23 +2,29 @@ from django.shortcuts import render
 from .models import Contact,Feed,Valo
 
 def homepage(request):
-	if request.method=="POST":
+	if(request.method=="POST"):
 		name = request.POST.get('name', '')
 		tel = request.POST.get('tel', '')
 		email = request.POST.get('email', '')
 		message = request.POST.get('message', '')
-		contact = Contact(name=name, tel=tel, email=email, message=message)
-		contact.save()
+
+		if (name != ""):
+			contact = Contact(name=name, tel=tel, email=email, message=message)
+			contact.save()
+
+		elif (name == ""):
+			feed = Feed(email=email, message=message)
+			feed.save()
 	return render(request, 'index.html')
 
-def feedback(request):
+# def feedback(request):
 	
-	if request.method=="POST":
-		email = request.POST.get('email', '')
-		message = request.POST.get('message', '')
-		feed = Feed(email=email, message=message)
-		feed.save()
-	return render(request, 'feedback.html')
+# 	if request.method=="POST":
+# 		email = request.POST.get('email', '')
+# 		message = request.POST.get('message', '')
+# 		feed = Feed(email=email, message=message)
+# 		feed.save()
+# 	return render(request, 'feedback.html')
 
 
 def volunteer(request):
