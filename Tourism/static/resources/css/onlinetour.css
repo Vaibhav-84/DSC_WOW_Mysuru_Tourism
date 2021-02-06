@@ -1,6 +1,7 @@
 .online{
-    position: relative;
+    /* position: relative; */
     margin: 0px 20px;
+    height: 255px;
 }
 .btns{
     width:100%;
@@ -18,9 +19,20 @@
     background-color: rgb(255, 136, 0);
     color:aliceblue;
     transition: all 0.5s;
-    margin: 0px 20px;
+    margin: 12px 20px;
+    text-align: center;
 }
 .online-btn:hover{
     background-color: rgb(185, 102, 8);
 }
-
+section .online{
+    padding: 20px 0px;
+}
+@media screen and (max-width: 480px){
+    .online{
+        height: 500px;
+    }
+    .online-btn{
+        margin: 12px 20px;
+    }
+}
