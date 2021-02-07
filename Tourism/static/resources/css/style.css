@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+
 /*-------------------------------------*/
 /* BASIC SETUP*/
 /*-------------------------------------*/
@@ -7,30 +8,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   background-color: #fff;
   color: #555;
-  font-family: 'Lato','Arial',sans-serif;
+  font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 html {
-    overflow: scroll;
-    overflow-x: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+  background: #FF0000;
 }
-.clearfix {zoom: 1}
+
+.clearfix {
+  zoom: 1
+}
+
 .clearfix:after {
   content: '.';
   clear: both;
@@ -38,11 +49,11 @@ html {
   height: 0;
   visibility: hidden;
 }
+
 /*-------------------------------------*/
 /* REUSABLE COMPONENTS*/
 /*-------------------------------------*/
-
-.sticky{
+.sticky {
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -62,8 +73,9 @@ h3 {
   font-weight: 300;
   text-transform: uppercase;
 }
-.headd{
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+.headd {
+  font-family: 'Lato', sans-serif;
   font-size: 60px;
 }
 
@@ -74,7 +86,6 @@ h1 {
   font-size: 240%;
   word-spacing: 4px;
   letter-spacing: 1px;
-  
 }
 
 h2 {
@@ -84,6 +95,7 @@ h2 {
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
+
 h2:after {
   display: block;
   height: 2px;
@@ -105,6 +117,7 @@ h3 {
   width: 70%;
   margin-left: 15%;
 }
+
 .box p {
   font-size: 90%;
   line-height: 145%;
@@ -118,6 +131,7 @@ h3 {
   /* padding-left: 90px; */
   margin-bottom: 10px;
 }
+
 .icon-small {
   display: inline-block;
   width: 30px;
@@ -125,17 +139,15 @@ h3 {
   color: #e67e22;
   font-size: 120%;
   margin-right: 5px;
-
   /* secrets to align text and icon */
   line-height: 120%;
   vertical-align: middle;
   margin-top: -5px;
 }
+
 /*-------------------
 ------LINKS----------
  -----------------*/
-
-
 .twee-links:link,
 .twee-links:visited {
   color: #e67e22;
@@ -172,21 +184,25 @@ input[type=submit] {
   margin-right: 15px;
   color: #fff;
 }
+
 .btn-ghost:link,
 .btn-ghost:visited {
   border: 1px solid #e67e22;
   color: #e67e22;
 }
+
 .btn:hover,
-.btn:active{
+.btn:active {
   background-color: #cf6d17;
 }
+
 .btn-full:hover,
 .btn-full:active,
 input[type=submit]:hover,
 input[type=submit]:active {
   background-color: #cf6d17;
 }
+
 .btn-ghost:hover,
 .btn-ghost:active {
   border: 1px solid #cf6d17;
@@ -196,14 +212,14 @@ input[type=submit]:active {
 /*-------------------------------------*/
 /* HEADER*/
 /*-------------------------------------*/
-
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(heroo.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
 }
+
 .hero-text-box {
   position: absolute;
   width: 1140px;
@@ -211,6 +227,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .Logo,
 .Logo-black {
   height: 100px;
@@ -218,15 +235,16 @@ header {
   float: left;
   margin-top: 20px;
 }
-.Logo-black {display: none;}
 
+.Logo-black {
+  display: none;
+}
 
 /*Covid Section*/
-.covidimg{
+.covidimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .box h3 {
@@ -236,30 +254,35 @@ header {
 /*-------------------------------------*/
 /* features*/
 /*-------------------------------------*/
-.section-features .long-copy{
+.section-features .long-copy {
   margin-bottom: 30px;
 }
+
 /*-------------------------------------*/
 /* MEALS*/
 /*-------------------------------------*/
 .section-meals {
   padding: 0;
 }
+
 .meals-showcase {
   list-style: none;
   width: 100%;
 }
+
 .meals-showcase li {
   display: block;
   float: left;
   width: 25%;
 }
-.meal-photo{
+
+.meal-photo {
   width: 100%;
   margin: 0;
   overflow: hidden;
   background-color: #000;
 }
+
 .meal-photo img {
   opacity: 0.7;
   width: 100%;
@@ -268,11 +291,11 @@ header {
   /* transition: transform 0.5s opacity 0.5s; */
   transition: all 1s ease;
 }
+
 .meal-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
 }
-
 
 /*-------------------------------------*/
 /* HOW IT WORKS*/
@@ -280,24 +303,30 @@ header {
 .section-steps {
   background-color: #f4f4f4;
 }
+
 .steps-box:first-child {
   text-align: right;
   padding-right: 3%;
   margin-top: 30px;
 }
+
 .steps-box:last-child {
   padding-left: 3%;
   margin-top: 70px;
 }
+
 .app-screen {
   width: 40%;
 }
+
 .works-step {
   margin-bottom: 50px;
 }
+
 .works-step:last-of-type {
   margin-bottom: 80px;
 }
+
 .works-step div {
   color: #e67e22;
   border: 2px solid #e67e22;
@@ -312,19 +341,21 @@ header {
   margin-right: 25px;
 }
 
-.btn-app img{
+.btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
 }
+
 /*-------------------------------------*/
 /* CITIES*/
 /*-------------------------------------*/
 .box img {
-  width: 80%;
+  width: 100%;
   height: 200px;
   margin-bottom: 15px;
 }
+
 .city-feature {
   margin-bottom: 5px;
 }
@@ -332,15 +363,17 @@ header {
 #Hotel {
   text-align: center;
 }
+
 /*-------------------------------------*/
 /* testimonials*/
 /*-------------------------------------*/
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(17.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(17.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
 }
+
 blockquote {
   padding: 2%;
   font-style: italic;
@@ -348,6 +381,7 @@ blockquote {
   position: relative;
   margin-top: 40px;
 }
+
 blockquote:before {
   display: block;
   content: "\201C";
@@ -355,8 +389,8 @@ blockquote:before {
   position: absolute;
   top: -5px;
   left: -5px;
-
 }
+
 cite {
   font-size: 90%;
   margin-top: 25px;
@@ -369,12 +403,14 @@ cite img {
   margin-right: 10px;
   vertical-align: middle;
 }
+
 /*-------------------------------------*/
 /*--------------PLANS------------------*/
 /*-------------------------------------*/
 .section-plans {
   background-color: #f4f4f4;
 }
+
 .plan-box {
   background-color: #fff;
   border-radius: 5px;
@@ -382,35 +418,43 @@ cite img {
   margin-left: 5%;
   box-shadow: 0 2px 2px #efefef;
 }
+
 .plan-box div {
   padding: 15px;
   border-bottom: 1px solid #e8e8e8;
 }
+
 .plan-box div:first-child {
   background-color: #fcfcfc;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
 .plan-box div:last-child {
   text-align: center;
   border: 0;
 }
+
 .plan-price {
   font-size: 300%;
   margin-bottom: 10px;
   font-weight: 100;
   color: #e67e22;
 }
+
 .plan-price span {
   font-size: 30%;
   font-weight: 300;
 }
+
 .plan-price-meal {
   font-size: 80%;
 }
+
 .plan-box ul {
   list-style: none;
 }
+
 .plan-box ul li {
   padding: 5px 0;
 }
@@ -418,8 +462,7 @@ cite img {
 /*-------------------------------------*/
 /*-----------CONTACT FORM--------------*/
 /*-------------------------------------*/
-
-.contact-form{
+.contact-form {
   width: 60%;
   margin: 0 auto;
 }
@@ -434,20 +477,23 @@ textarea {
   border-radius: 3px;
   border: 1px solid #ccc;
 }
+
 textarea {
   height: 100px;
 }
+
 input[type=checkbox] {
   margin: 10px 5px 10px 0;
 }
-*:focus{
+
+*:focus {
   outline: none;
 }
 
 /*-------------------------------------*/
 /*---------------Footer----------------*/
 /*-------------------------------------*/
-footer{
+footer {
   background-color: #333;
   padding: 50px;
   font-size: 80%;
@@ -458,10 +504,11 @@ footer a {
   color: #fff;
 }
 
-.footer-nav{
+.footer-nav {
   list-style: none;
   float: left;
 }
+
 .social-nav {
   list-style: none;
   float: right;
@@ -472,11 +519,13 @@ footer a {
   display: inline-block;
   margin-right: 20px;
 }
+
 .footer-nav li:last-child,
 .social-nav li:last-child {
   margin: 0;
 }
-.footer-nav a:link ,
+
+.footer-nav a:link,
 .footer-nav a:visited,
 .social-nav a:link,
 .social-nav a:visited {
@@ -484,7 +533,8 @@ footer a {
   border: 0;
   color: #888;
 }
-.footer-nav a:hover ,
+
+.footer-nav a:hover,
 .footer-nav a:active {
   color: #ddd;
 }
@@ -493,6 +543,7 @@ footer a {
 .social-nav a:active {
   font-size: 180%;
 }
+
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-googleplus,
@@ -503,15 +554,19 @@ footer a {
 .ion-social-facebook:hover {
   color: #3b5998;
 }
-.ion-social-twitter:hover  {
+
+.ion-social-twitter:hover {
   color: #00aced;
 }
+
 .ion-social-googleplus:hover {
   color: #dd4b39;
 }
+
 .ion-social-instagram:hover {
   color: #517fa4;
 }
+
 footer p {
   color: #888;
   text-align: center;
@@ -519,40 +574,34 @@ footer p {
   margin-top: 90px;
 }
 
-
-
-
 /*======== map and phone ==== */
-.mapphone{
+.mapphone {
   border: 2px solid red;
 }
-.map{
+
+.map {
   position: absolute;
   right: 490px;
 }
 
-
-.feed{
+.feed {
   margin-top: 100px;
 }
 
-.hfeed{
+.hfeed {
   color: black;
   margin-left: 500px;
   margin-top: 50px;
 }
 
-
 /* NAVBAR*/
-
-
 /* feedback form  */
-.f-form{
+.f-form {
   bottom: 80px;
 }
 
 @media only screen and (max-width: 767px) {
-  .f-form{
+  .f-form {
     bottom: 60px;
   }
 }

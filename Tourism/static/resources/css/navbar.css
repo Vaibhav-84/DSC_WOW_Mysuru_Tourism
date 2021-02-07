@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:900&display=swap');
 
 :root {
-  --color-primary: /*#613A3A*/ /*#7AFDD6*/ #4b250a;
-  --color-secondary: /*#7AFDD6*/ /*#613A3A*/ #e67e22;
+  --color-primary:
+    /*#613A3A*/
+    /*#7AFDD6*/
+    #4b250a;
+  --color-secondary:
+    /*#7AFDD6*/
+    /*#613A3A*/
+    #e67e22;
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -12,7 +18,7 @@
   --font-size: 1.125rem;
   --line-height: 1.5;
 }
-/*https://codepen.io/zabiap/pen/bGpgOmy*/
+
 * {
   box-sizing: border-box;
 }
@@ -44,7 +50,7 @@ h1 {
   top: calc(var(--space) * 1.5);
   right: calc(var(--space) * 2);
   cursor: pointer;
-  z-index: 2;
+  z-index: 200;
 }
 
 .icon--menu-toggle {
@@ -81,7 +87,7 @@ h1 {
   height: 100%;
   transform: translateX(-100%);
   transition: transform var(--nav-duration);
-  z-index: 1;
+  z-index: 100;
 }
 
 .main-navigation:after {
@@ -282,3 +288,8 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .main-navigation ul li a {
+    font-size: 28px;
+  }
+}
