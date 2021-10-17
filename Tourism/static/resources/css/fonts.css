@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+.headd{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-full{
+    font-family: 'Comfortaa', cursive;
+}
+
+.btn-ghost{
+    font-family: 'Comfortaa', cursive;
+}
+
+.row > h2{
+    font-family: 'Patua One', cursive;
+}
+
+.col  > h3 > pre{
+    font-family: 'Righteous', cursive;
+}
+.col  > h3 {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.city-feature{
+    font-family: 'Overlock', cursive;
+}
+
+.online > h2{
+    font-family: 'Forum', cursive;
+}
+
+.btns > a {
+    font-family: 'Coda', cursive;
+}
+
+.plan-box > div > h3{
+    font-family: 'Overlock', cursive;
+}
+
+.plan-box > div > p{
+    font-family: 'Righteous', cursive;
+}
+
+.plan-box > div > ul > li{
+    font-family: 'Comfortaa', cursive;
+}
+
+.col > label , input::placeholder{
+    font-family: 'Comfortaa', cursive;
+}
+
+.col > input{
+    font-family: 'Comfortaa', cursive;
+}
+
+blockquote{
+    font-family: 'Gideon Roman', cursive;
+}
+
+.relative  > label ,  .relative > button {
+    font-family: 'Comfortaa', cursive;
+}
+
+.text-xs{
+    font-family: 'Righteous', cursive;
+}
+
+.footer-nav >  li > a,  .row > p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-navigation > ul > li > a{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.top-section > h1 , .content > h2{
+    font-family: 'Comfortaa', cursive;
+}
+
+.content > p{
+    font-family: 'Patua One', cursive;
+}
+
+.hfeed{
+    font-family: 'Patua One', cursive;
+}
